@@ -1,0 +1,326 @@
+[
+	{
+		"version": "AVS",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/0"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "NOT FOR TRANSLATIONS!",
+		"stats": {
+			"edits": 0,
+			"downloads": 65238,
+			"sequences": 701
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "elderman",
+			"url": "/user/11400"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "AVS.COLORED",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/2"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "NOT FOR TRANSLATIONS!",
+		"stats": {
+			"edits": 0,
+			"downloads": 10798,
+			"sequences": 701
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "elderman",
+			"url": "/user/11400"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "SYS",
+		"worksWith": [
+			"LOL",
+			"SYS",
+			"DIMENSION"
+		],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/3"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "For translation only.",
+		"stats": {
+			"edits": 0,
+			"downloads": 7191,
+			"sequences": 806
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "elderman",
+			"url": "/user/11400"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "1080i.HDTV.DD5.1.H.264-TOPKEK",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/6"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "RESYNC for \"Game.of.Thrones.S06E04.1080i.HDTV.DD5.1.H.264-TOPKEK\"",
+		"stats": {
+			"edits": 0,
+			"downloads": 11777,
+			"sequences": 701
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "wernerml",
+			"url": "/user/39975"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "WEB-DL.NTb",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/20"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Extracted and Fix errors",
+		"stats": {
+			"edits": 0,
+			"downloads": 2630,
+			"sequences": 685
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "GoldenBeard",
+			"url": "/user/418387"
+		},
+		"pubDate": "2016-09-12T23:18:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "WEB-DL",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/24"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Resync of AVS.TRANS version | WORK WITH \"WEB-DL-NTb\" | CONTAINS HARDCODED LINES _ FOR TRANSLATORS",
+		"stats": {
+			"edits": 0,
+			"downloads": 2643,
+			"sequences": 805
+		},
+		"corrected": true,
+		"hearingImpaired": true,
+		"language": 1,
+		"uploader": {
+			"name": "jaideejung007",
+			"url": "/user/574350"
+		},
+		"pubDate": "2016-09-12T23:17:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "AVS",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "most updated",
+				"url": "/updated/1/112218/1"
+			},
+			{
+				"type": "original",
+				"url": "/original/112218/1"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "NOT FOR TRANSLATIONS!",
+		"stats": {
+			"edits": 11,
+			"downloads": 26245,
+			"sequences": 643
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "elderman",
+			"url": "/user/11400"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "AVS.TRANS",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "most updated",
+				"url": "/updated/1/112218/4"
+			},
+			{
+				"type": "original",
+				"url": "/original/112218/4"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "For translation only.",
+		"stats": {
+			"edits": 1,
+			"downloads": 4858,
+			"sequences": 748
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "elderman",
+			"url": "/user/11400"
+		},
+		"pubDate": "2016-09-12T23:20:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "CtrlHD",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/16"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Resync from Elderman's subtitles, Thanks! Works with DON!",
+		"stats": {
+			"edits": 0,
+			"downloads": 1985,
+			"sequences": 641
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "Faisal.B",
+			"url": "/user/304091"
+		},
+		"pubDate": "2016-09-12T23:18:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "PROPER.HDTV.x264-KILLERS",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/18"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Resync from CtrlHD version previously uploaded by Faisal.B. This Version only works for Game.of.Thrones.S06E04.Book.of.the.Stranger.PROPER.HDTV.x264-KILLERS",
+		"stats": {
+			"edits": 0,
+			"downloads": 11732,
+			"sequences": 641
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "TakeshiKudo",
+			"url": "/user/130682"
+		},
+		"pubDate": "2016-09-12T23:18:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "WEB-DL.NTb",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/19"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Extracted and Fix errors",
+		"stats": {
+			"edits": 0,
+			"downloads": 3354,
+			"sequences": 627
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "GoldenBeard",
+			"url": "/user/418387"
+		},
+		"pubDate": "2016-09-12T23:18:00.000Z",
+		"completed": true
+	},
+	{
+		"version": "WEB-DL",
+		"worksWith": [],
+		"downloads": [
+			{
+				"type": "original",
+				"url": "/original/112218/23"
+			}
+		],
+		"referer": "/show/1245",
+		"description": "Resync of AVS.TRANS version | WORK WITH \"WEB-DL-NTb\" | CONTAINS HARDCODED LINES _ FOR TRANSLATORS",
+		"stats": {
+			"edits": 0,
+			"downloads": 2201,
+			"sequences": 748
+		},
+		"corrected": true,
+		"hearingImpaired": false,
+		"language": 1,
+		"uploader": {
+			"name": "jaideejung007",
+			"url": "/user/574350"
+		},
+		"pubDate": "2016-09-12T23:17:00.000Z",
+		"completed": true
+	}
+]
