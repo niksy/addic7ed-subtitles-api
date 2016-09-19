@@ -1,6 +1,6 @@
 {
   "name": "addic7ed-subtitles-api",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "API for Addic7ed subtitles.",
   "main": "index.js",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
