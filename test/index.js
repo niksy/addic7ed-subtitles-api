@@ -45,7 +45,7 @@ it('should return array of subtitles if show information is correct', function (
 	var fn = rewire('../');
 
 	parse.__set__('date', function ( str ) {
-		return require('date.js')(str, new Date(2016, 8, 13));
+		return require('date.js')(str, new Date('2016-09-12T23:20:00.000Z'));
 	});
 	fn.__set__('parse', parse);
 
