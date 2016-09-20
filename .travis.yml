@@ -4,3 +4,5 @@ node_js:
 branches:
   only:
     - /^v[0-9]/
+before_install:
+  - export TZ=Europe/Zagreb
