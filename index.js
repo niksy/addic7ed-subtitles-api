@@ -3,9 +3,22 @@ var _ = require('lodash');
 var got = require('got');
 var normalizeUrl = require('normalize-url');
 var contentDisposition = require('content-disposition');
+var contentType = require('content-type');
 var parse = require('./lib/parse');
 var langs = require('./lib/langs');
 var API_URL = 'http://www.addic7ed.com';
+
+/**
+ * @param  {String} str
+ *
+ * @return {Object}
+ */
+function parseContentTypeHeader ( str ) {
+	if ( /charset=$/.test(str) ) {
+		str = `${str}utf8`;
+	}
+	return contentType.parse(str);
+}
 
 /**
  * @param  {String|Number} value
@@ -75,9 +88,14 @@ module.exports.download = function ( url ) {
 		}
 	})
 		.then(( res ) => {
-			var buff = new Buffer(res.body);
-			buff.filename = contentDisposition.parse(res.headers['content-disposition']).parameters.filename;
-			return buff;
+			var headerContentType = parseContentTypeHeader(res.headers['content-type']);
+			var buff;
+			if ( headerContentType.type !== 'text/html' ) {
+				buff = new Buffer(res.body);
+				buff.filename = contentDisposition.parse(res.headers['content-disposition']).parameters.filename;
+				return buff;
+			}
+			return Promise.reject(parse.getDownloadCountExceededMessage(res.body));
 		});
 
 };

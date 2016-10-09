@@ -85,3 +85,10 @@ it('should get subtitle filename from headers', function () {
 			assert.equal(sub.filename, 'Game of Thrones - 06x04 - Book of the Stranger.AVS.English.HI.C.orig.Addic7ed.com.srt');
 		});
 });
+
+it('should reject if subtitle download count is excedeed', function () {
+	return fn.download('/original/112218/3')
+		.catch(function ( err ) {
+			assert.equal(err, 'Daily Download count exceeded. Login to continue. Error: 2: Anonymous users are limited to 15 downloads per 24 hours on their IP address. Fix: Login to get more 127.0.0.1 Registered users are limited to 40 but VIPs get 80 downloads every 24 hours. Please consider donating to become VIP and show your support.');
+		});
+});
