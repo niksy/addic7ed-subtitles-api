@@ -69,3 +69,10 @@ it('should download subtitle when provided with subtitle URL', function () {
 			assert.equal(sub instanceof Buffer, true);
 		});
 });
+
+it('should get subtitle filename from headers', function () {
+	return fn.download('/original/112218/3')
+		.then(function ( sub ) {
+			assert.equal(sub.filename, 'Game of Thrones - 06x04 - Book of the Stranger.AVS.English.HI.C.orig.Addic7ed.com.srt');
+		});
+});

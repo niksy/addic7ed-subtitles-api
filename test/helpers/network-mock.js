@@ -41,7 +41,10 @@ module.exports = {
 
 		url
 			.get('/original/112218/3')
-			.replyWithFile(200, path.join(__dirname, 'fixtures/subtitle.srt'));
+			.times(2)
+			.replyWithFile(200, path.join(__dirname, 'fixtures/subtitle.srt'), {
+				'Content-Disposition': 'attachment; filename="Game of Thrones - 06x04 - Book of the Stranger.AVS.English.HI.C.orig.Addic7ed.com.srt"'
+			});
 
 	},
 	destroy: function () {

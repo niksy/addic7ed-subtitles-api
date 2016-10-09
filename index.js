@@ -2,6 +2,7 @@ var path = require('path');
 var _ = require('lodash');
 var got = require('got');
 var normalizeUrl = require('normalize-url');
+var contentDisposition = require('content-disposition');
 var parse = require('./lib/parse');
 var API_URL = 'http://www.addic7ed.com';
 
@@ -57,7 +58,9 @@ module.exports.download = function ( url ) {
 		}
 	})
 		.then(( res ) => {
-			return new Buffer(res.body);
+			var buff = new Buffer(res.body);
+			buff.filename = contentDisposition.parse(res.headers['content-disposition']).parameters.filename;
+			return buff;
 		});
 
 };

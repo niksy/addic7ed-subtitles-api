@@ -99,7 +99,7 @@ Subtitles language based on Addic7ed languages ID.
 
 Returns: `Promise`
 
-Downloads subtitle from URL.
+Downloads subtitle from URL. Returns `Buffer` with custom `filename` property containing proposed output filename.
 
 #### url
 
