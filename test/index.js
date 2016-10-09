@@ -1,5 +1,5 @@
 var assert = require('assert');
-var rewire = require('rewire');
+var timekeeper = require('timekeeper');
 var networkMock = require('./helpers/network-mock');
 var fn = require('../');
 
@@ -39,20 +39,22 @@ it('should return empty array of subtitles if show information is incorrect', fu
 		});
 });
 
-it('should return array of subtitles if show information is correct', function () {
+describe('', function () {
 
-	var parse = rewire('../lib/parse');
-	var fn = rewire('../');
-
-	parse.__set__('date', function ( str ) {
-		return require('date.js')(str, new Date('2016-09-12T23:20:00.000Z'));
+	before(function () {
+		timekeeper.freeze(new Date('2016-09-12T23:20:00.000Z'));
 	});
-	fn.__set__('parse', parse);
 
-	return fn(1245, 6, 4)
-		.then(function ( subs ) {
-			assert.deepEqual(subs, require('./fixtures/subtitles.json'));
-		});
+	after(function () {
+		timekeeper.reset();
+	});
+
+	it('should return array of subtitles if show information is correct', function () {
+		return fn(1245, 6, 4)
+			.then(function ( subs ) {
+				assert.deepEqual(subs, require('./fixtures/subtitles.json'));
+			});
+	});
 
 });
 
