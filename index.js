@@ -4,7 +4,24 @@ var got = require('got');
 var normalizeUrl = require('normalize-url');
 var contentDisposition = require('content-disposition');
 var parse = require('./lib/parse');
+var langs = require('./lib/langs');
 var API_URL = 'http://www.addic7ed.com';
+
+/**
+ * @param  {String|Number} value
+ *
+ * @return {Number}
+ */
+function resolveLanguage ( value ) {
+	var lang;
+	if ( typeof value === 'string' ) {
+		lang = _.find(langs, ( o ) => { return o.locale.indexOf(value) !== -1; });
+		if ( typeof lang !== 'undefined' ) {
+			return lang.id;
+		}
+	}
+	return value;
+}
 
 /**
  * @param  {String} url
@@ -35,7 +52,7 @@ module.exports = function ( id, season, episode, options ) {
 					body: ''
 				};
 			}
-			return fetchLanguage(part, options.language);
+			return fetchLanguage(part, resolveLanguage(options.language));
 		})
 		.then(( res ) => {
 			return parse(res.body);

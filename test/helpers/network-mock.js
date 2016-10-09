@@ -23,16 +23,17 @@ module.exports = {
 			.query({
 				ep: '1245-6x4'
 			})
-			.times(2)
+			.times(3)
 			.reply(302, '', {
 				Location: '/serie/Game_of_Thrones/6/4/Book_of_the_Stranger'
 			})
 			.head('/serie/Game_of_Thrones/6/4/Book_of_the_Stranger')
-			.times(2)
+			.times(3)
 			.reply(200);
 
 		url
 			.get('/serie/Game_of_Thrones/6/4/1')
+			.times(2)
 			.replyWithFile(200, path.join(__dirname, 'fixtures/subtitles.html'));
 
 		url

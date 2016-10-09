@@ -90,10 +90,10 @@ Type: `Object`
 
 ##### language
 
-Type: `Integer`  
+Type: `Integer|String`  
 Default: `1` (English)
 
-Subtitles language based on Addic7ed languages ID.
+Subtitles language based on Addic7ed languages ID or [locale string][locales]. Locales are mapped as close as possible to their Addic7ed ID equivalent.
 
 ### subs.download(url)
 
@@ -118,3 +118,4 @@ MIT © [Ivan Nikolić](http://ivannikolic.com)
 [ci]: https://travis-ci.org/niksy/addic7ed-subtitles-api
 [ci-img]: https://img.shields.io/travis/niksy/addic7ed-subtitles-api.svg
 [addic7ed]: http://www.addic7ed.com/
+[locales]: https://github.com/python/cpython/blob/be2a1a76fa43bb1ea1b3577bb5bdd506a2e90e37/Lib/locale.py#L1395-L1604

@@ -1,0 +1,282 @@
+[
+	{
+		"id": 52,
+		"title": "Albanian",
+		"locale": ["sq_AL"]
+	},
+	{
+		"id": 38,
+		"title": "Arabic",
+		"locale": ["ar_SA", "ar_IQ", "ar_EG", "ar_LY", "ar_DZ", "ar_MA", "ar_TN", "ar_OM", "ar_YE", "ar_SY", "ar_JO", "ar_LB", "ar_KW", "ar_AE", "ar_BH", "ar_QA"]
+	},
+	{
+		"id": 50,
+		"title": "Armenian",
+		"locale": "hy_AM"
+	},
+	{
+		"id": 48,
+		"title": "Azerbaijani",
+		"locale": ["az_AZ"]
+	},
+	{
+		"id": 47,
+		"title": "Bengali",
+		"locale": ["bn_BD"]
+	},
+	{
+		"id": 44,
+		"title": "Bosnian",
+		"locale": ["bs_BA"]
+	},
+	{
+		"id": 35,
+		"title": "Bulgarian",
+		"locale": ["bg_BG"]
+	},
+	{
+		"id": 12,
+		"title": "Català",
+		"locale": ["ca_ES"]
+	},
+	{
+		"id": 41,
+		"title": "Chinese (Simplified)",
+		"locale": ["zh_CHS"]
+	},
+	{
+		"id": 24,
+		"title": "Chinese (Traditional)",
+		"locale": ["zh_CHT"]
+	},
+	{
+		"id": 31,
+		"title": "Croatian",
+		"locale": ["hr_HR"]
+	},
+	{
+		"id": 14,
+		"title": "Czech",
+		"locale": ["cs_CZ"]
+	},
+	{
+		"id": 30,
+		"title": "Danish",
+		"locale": ["da_DK"]
+	},
+	{
+		"id": 17,
+		"title": "Dutch",
+		"locale": ["nl_NL", "nl_BE"]
+	},
+	{
+		"id": 1,
+		"title": "English",
+		"locale": ["en_US", "en_GB", "en_AU", "en_CA", "en_NZ", "en_IE", "en_ZA", "en_JA", "en_CB", "en_BZ", "en_TT", "en_ZW", "en_PH", "en_IN", "en_MY", "en_IN"]
+	},
+	{
+		"id": 54,
+		"title": "Estonian",
+		"locale": ["et_EE"]
+	},
+	{
+		"id": 13,
+		"title": "Euskera",
+		"locale": ["eu_ES"]
+	},
+	{
+		"id": 28,
+		"title": "Finnish",
+		"locale": ["fi_FI"]
+	},
+	{
+		"id": 8,
+		"title": "French",
+		"locale": ["fr_FR", "fr_BE", "fr_CH", "fr_LU", "fr_MC"]
+	},
+	{
+		"id": 53,
+		"title": "French (Canadian)",
+		"locale": ["fr_CA"]
+	},
+	{
+		"id": 15,
+		"title": "Galego",
+		"locale": ["gl_ES"]
+	},
+	{
+		"id": 11,
+		"title": "German",
+		"locale": ["de_DE", "de_CH", "de_AT", "de_LU", "de_LI"]
+	},
+	{
+		"id": 27,
+		"title": "Greek",
+		"locale": ["el_GR"]
+	},
+	{
+		"id": 23,
+		"title": "Hebrew",
+		"locale": ["he_IL"]
+	},
+	{
+		"id": 55,
+		"title": "Hindi",
+		"locale": ["hi_IN"]
+	},
+	{
+		"id": 20,
+		"title": "Hungarian",
+		"locale": ["hu_HU"]
+	},
+	{
+		"id": 56,
+		"title": "Icelandic",
+		"locale": ["is_IS"]
+	},
+	{
+		"id": 37,
+		"title": "Indonesian",
+		"locale": ["id_ID"]
+	},
+	{
+		"id": 7,
+		"title": "Italian",
+		"locale": ["it_IT", "it_CH"]
+	},
+	{
+		"id": 32,
+		"title": "Japanese",
+		"locale": ["ja_JP"]
+	},
+	{
+		"id": 42,
+		"title": "Korean",
+		"locale": ["ko_KR"]
+	},
+	{
+		"id": 57,
+		"title": "Latvian",
+		"locale": ["lv_LV"]
+	},
+	{
+		"id": 58,
+		"title": "Lithuanian",
+		"locale": ["lt_LT"]
+	},
+	{
+		"id": 49,
+		"title": "Macedonian",
+		"locale": ["mk_MK"]
+	},
+	{
+		"id": 40,
+		"title": "Malay",
+		"locale": ["ms_MY", "ms_BN"]
+	},
+	{
+		"id": 29,
+		"title": "Norwegian",
+		"locale": ["nb_NO", "nn_NO"]
+	},
+	{
+		"id": 43,
+		"title": "Persian",
+		"locale": ["fa_IR"]
+	},
+	{
+		"id": 21,
+		"title": "Polish",
+		"locale": ["pl_PL"]
+	},
+	{
+		"id": 9,
+		"title": "Portuguese",
+		"locale": ["pt_PT"]
+	},
+	{
+		"id": 10,
+		"title": "Portuguese (Brazilian)",
+		"locale": ["pt_BR"]
+	},
+	{
+		"id": 26,
+		"title": "Romanian",
+		"locale": ["ro_RO"]
+	},
+	{
+		"id": 19,
+		"title": "Russian",
+		"locale": ["ru_RU"]
+	},
+	{
+		"id": 39,
+		"title": "Serbian (Cyrillic)",
+		"locale": ["sr_SP"]
+	},
+	{
+		"id": 36,
+		"title": "Serbian (Latin)",
+		"locale": ["sr_SP"]
+	},
+	{
+		"id": 60,
+		"title": "Sinhala",
+		"locale": ["si_LK"]
+	},
+	{
+		"id": 25,
+		"title": "Slovak",
+		"locale": ["sk_SK"]
+	},
+	{
+		"id": 22,
+		"title": "Slovenian",
+		"locale": ["sl_SI"]
+	},
+	{
+		"id": 4,
+		"title": "Spanish",
+		"locale": ["es_US"]
+	},
+	{
+		"id": 6,
+		"title": "Spanish (Latin America)",
+		"locale": ["es_MX", "es_GT", "es_CR", "es_PA", "es_DO", "es_VE", "es_CO", "es_PE", "es_AR", "es_EC", "es_CL", "es_UR", "es_PY", "es_BO", "es_SV", "es_HN", "es_NI", "es_PR"]
+	},
+	{
+		"id": 5,
+		"title": "Spanish (Spain)",
+		"locale": ["es_ES"]
+	},
+	{
+		"id": 18,
+		"title": "Swedish",
+		"locale": ["sv_SE", "sv_FI"]
+	},
+	{
+		"id": 59,
+		"title": "Tamil",
+		"locale": ["ta_IN"]
+	},
+	{
+		"id": 46,
+		"title": "Thai",
+		"locale": ["th_TH"]
+	},
+	{
+		"id": 16,
+		"title": "Turkish",
+		"locale": ["tr_TR"]
+	},
+	{
+		"id": 51,
+		"title": "Ukrainian",
+		"locale": ["uk_UA"]
+	},
+	{
+		"id": 45,
+		"title": "Vietnamese",
+		"locale": ["vi_VN"]
+	}
+]

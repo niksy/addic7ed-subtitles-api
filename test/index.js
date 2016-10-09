@@ -56,6 +56,13 @@ describe('', function () {
 			});
 	});
 
+	it('should return array of subtitles if there are any subtitles for specific language defined as locale string', function () {
+		return fn(1245, 6, 4, { language: 'en_US' })
+			.then(function ( subs ) {
+				assert.deepEqual(subs, require('./fixtures/subtitles.json'));
+			});
+	});
+
 });
 
 it('should return empty array of subtitles if there aren’t any subtitles for specific language', function () {
