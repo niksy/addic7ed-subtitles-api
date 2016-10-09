@@ -1,12 +1,14 @@
-var path = require('path');
-var _ = require('lodash');
-var got = require('got');
-var normalizeUrl = require('normalize-url');
-var contentDisposition = require('content-disposition');
-var contentType = require('content-type');
-var parse = require('./lib/parse');
-var langs = require('./lib/langs');
-var API_URL = 'http://www.addic7ed.com';
+'use strict';
+
+const path = require('path');
+const _ = require('lodash');
+const got = require('got');
+const normalizeUrl = require('normalize-url');
+const contentDisposition = require('content-disposition');
+const contentType = require('content-type');
+const parse = require('./lib/parse');
+const langs = require('./lib/langs');
+const API_URL = 'http://www.addic7ed.com';
 
 /**
  * @param  {String} str
@@ -26,9 +28,8 @@ function parseContentTypeHeader ( str ) {
  * @return {Number}
  */
 function resolveLanguage ( value ) {
-	var lang;
 	if ( typeof value === 'string' ) {
-		lang = _.find(langs, ( o ) => { return o.locale.indexOf(value) !== -1; });
+		const lang = _.find(langs, ( o ) => { return o.locale.indexOf(value) !== -1; });
 		if ( typeof lang !== 'undefined' ) {
 			return lang.id;
 		}
@@ -43,11 +44,19 @@ function resolveLanguage ( value ) {
  * @return {Promise}
  */
 function fetchLanguage ( url, language ) {
-	var part = url.split('/'); part.pop();
+	const part = url.split('/'); part.pop();
 	return got(normalizeUrl(`${API_URL}/${path.join(part.join('/'))}/${language}`));
 }
 
-module.exports = function ( id, season, episode, options ) {
+/**
+ * @param  {Integer} id
+ * @param  {Integer} season
+ * @param  {Integer} episode
+ * @param  {Object} options
+ *
+ * @return {Promise}
+ */
+module.exports = ( id, season, episode, options ) => {
 
 	if ( typeof id !== 'number' || typeof season !== 'number' || typeof episode !== 'number' ) {
 		return Promise.reject('Expected show and episode information.');
@@ -59,7 +68,7 @@ module.exports = function ( id, season, episode, options ) {
 
 	return got.head(normalizeUrl(`${API_URL}/re_episode.php?ep=${id}-${season}x${episode}`))
 		.then(( res ) => {
-			var part = res.req.path;
+			const part = res.req.path;
 			if ( part === '/index.php' ) {
 				return {
 					body: ''
@@ -78,7 +87,7 @@ module.exports = function ( id, season, episode, options ) {
  *
  * @return {Promise}
  */
-module.exports.download = function ( url ) {
+module.exports.download = ( url ) => {
 
 	url = normalizeUrl(`${API_URL}/${url}`);
 
@@ -88,10 +97,9 @@ module.exports.download = function ( url ) {
 		}
 	})
 		.then(( res ) => {
-			var headerContentType = parseContentTypeHeader(res.headers['content-type']);
-			var buff;
+			const headerContentType = parseContentTypeHeader(res.headers['content-type']);
 			if ( headerContentType.type !== 'text/html' ) {
-				buff = new Buffer(res.body);
+				const buff = new Buffer(res.body);
 				buff.filename = contentDisposition.parse(res.headers['content-disposition']).parameters.filename;
 				return buff;
 			}
