@@ -6,6 +6,7 @@ const got = require('got');
 const normalizeUrl = require('normalize-url');
 const contentDisposition = require('content-disposition');
 const contentType = require('content-type');
+const safeBuffer = require('safe-buffer').Buffer;
 const parse = require('./lib/parse');
 const langs = require('./lib/langs');
 const API_URL = 'http://www.addic7ed.com';
@@ -99,7 +100,7 @@ module.exports.download = ( url ) => {
 		.then(( res ) => {
 			const headerContentType = parseContentTypeHeader(res.headers['content-type']);
 			if ( headerContentType.type !== 'text/html' ) {
-				const buff = new Buffer(res.body);
+				const buff = safeBuffer.from(res.body);
 				buff.filename = contentDisposition.parse(res.headers['content-disposition']).parameters.filename;
 				return buff;
 			}
